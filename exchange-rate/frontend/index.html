@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Rate App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Exchange Rate Converter</h1>
+    <div id="container">
+        <div id="latest-div">
+            <h2>Latest Rate</h2>
+        <input type="text" id="from-currency" placeholder="From (e.g., USD)">
+        <input type="text" id="to-currency" placeholder="To (e.g., EUR)">
+        <button onclick="getLatestRate()">Get Latest Rate</button>
+        <p id="result"></p>
+        </div>
+    
+        <div id="historical-div">
+            <h2>Hystorical Rate</h2>
+            <input type="date" id="Historical-date" placeholder="Date (e.g., 2022-01-01)">
+            <input type="text" id="from-currency-historical" placeholder="From (e.g., USD)">
+            <input type="text" id="to-currency-historical" placeholder="To (e.g., EUR)">
+            <button onclick="getHistoricalRate()">Get Hystorical Rate</button>
+            <p id="Historical-result"></p>
+        </div>
+    </div>
+    <h2>List of all available currencies:</h2>
+    <ul id="currency-display" style="list-style-type: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
+
+    </ul>
+    
+</body>
+</html>
